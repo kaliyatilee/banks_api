@@ -1,0 +1,40 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Logs and temporary files
+logs/
+*.log
+*.swp
+
+# Database files
+*.db
+*.sqlite
+
+# Dependency directories
+lib/__pycache__/
+lib/dotxml_fastapi_simple_security/__pycache__/
+lib/phat/__pycache__/
+model/__pycache__/
+modules/__pycache__/
+startup/__pycache__/
+validators/__pycache__/
+templates/*
+.vscode/*
+*.pem
+
+lib/__pycache__/db_init.cpython-310.pyc
+lib/__pycache__/db_utils.cpython-310.pyc
+model/__pycache__/models.cpython-310.pyc
+model/__pycache__/model_utils.cpython-310.pyc
+lib/__pycache__/db_utils.cpython-310.pyc
+docs/excel/*
