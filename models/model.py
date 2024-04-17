@@ -10,7 +10,7 @@ from passlib.context import CryptContext
 from sqlalchemy.sql import func
 from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base() 
+Base = declarative_base()
 class EntityBank(Base):
     __tablename__ = "tbl_banks"
     id = Column(Integer, primary_key=True, index=True)
@@ -27,4 +27,3 @@ class EntityBankBranch(Base):
     bank_id = Column(Unicode(200), nullable=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now(), server_default=func.now())
-

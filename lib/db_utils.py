@@ -95,7 +95,7 @@ def delete_record_by_id(class_name,key_id):
           return True
      else:
          return False
-     
+
 def get_record_by_id(class_name,key_id):
      ModelClass = getattr(models, class_name)
      this = DBSession.query(ModelClass).\
@@ -106,7 +106,7 @@ def get_record_by_id(class_name,key_id):
         return outputdict
      else:
          return False
-     
+
 def get_all_records_by_attr_id(class_name, kwargs):
     ModelClass = getattr(models, class_name)
     attr_name = kwargs.pop('attr_name', None)  # Extract attribute name from kwargs and remove it
@@ -186,6 +186,3 @@ def check_if_it_exist(class_name, kwargs):
         return True
     else:
         return False
-
-
-

@@ -6,5 +6,6 @@ python-dotenv==1.0.0
 mysqlclient==2.2.0
 SQLAlchemy==1.4.
 passlib
-pandas 
+pandas
 openpyxl
+pre-commit

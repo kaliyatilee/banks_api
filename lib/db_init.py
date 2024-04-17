@@ -28,5 +28,3 @@ DBSession = Session()
 def create_tables():
     print("Running create tables")
     Base.metadata.create_all(bind=engine)
-
-    
