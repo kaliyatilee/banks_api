@@ -38,3 +38,5 @@ model/__pycache__/models.cpython-310.pyc
 model/__pycache__/model_utils.cpython-310.pyc
 lib/__pycache__/db_utils.cpython-310.pyc
 docs/excel/*
+docs/excel/Botswana Banks.xlsx
+docs/excel/BranchtoBank (2).xlsx

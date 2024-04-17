@@ -15,6 +15,7 @@ class EntityBank(Base):
     __tablename__ = "tbl_banks"
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(50), unique=True, nullable=False)
+    country_id = Column(Unicode(200), nullable=False)
     is_active = Column(Boolean, default=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now(), server_default=func.now())
@@ -25,5 +26,12 @@ class EntityBankBranch(Base):
     name = Column(String(50), unique=True, nullable=False)
     code = Column(String(50), unique=True, nullable=False)
     bank_id = Column(Unicode(200), nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), onupdate=func.now(), server_default=func.now())
+class EntityCountry(Base):
+    __tablename__ = "tbl_country"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(50), unique=True, nullable=False)
+    code = Column(String(50), unique=True, nullable=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now(), server_default=func.now())
